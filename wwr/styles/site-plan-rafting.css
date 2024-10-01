@@ -5,10 +5,10 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #dfbb07   ;
-  --secondary-color: #febb64 ;
-  --accent1-color: #A42212;
-  --accent2-color: rgb(254, 139, 8);
+  --primary-color: #9dd6ee   ;
+  --secondary-color: #64c8ef ;
+  --accent1-color: #04cdf1;
+  --accent2-color: rgb(42, 247, 213);
 
   /* change the values below to your chosen font(s) */
   --heading-font: "IM Fell French Canon";
@@ -16,13 +16,13 @@ Fonts are separated by a & */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #396E94;  /* headlines on a white background */ 
-  --headline-color-on-color: rgb(238, 104, 104); /* headlines on a colored background */ 
+  --headline-color-on-color: rgb(104, 238, 153); /* headlines on a colored background */ 
   --paragraph-color-on-white: #396E94; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: rgb(241, 92, 38); /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: rgb(66, 230, 189); /* paragraph text on a colored background */ 
   --paragraph-background-color: #396E94  ;
   --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: rgb(238, 87, 87);
+  --nav-background-color: #06f8cc;
+  --nav-hover-link-color: rgb(6, 131, 226);
   --nav-hover-background-color: #396E94;
 }
 
@@ -73,7 +73,7 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: #fc6767;
+  background-color: #4b83bf;
 }
 .colors td{
   width: 25%;
@@ -134,17 +134,17 @@ nav a:hover {
 }
 .sm-home {
   grid-area: home;
-  background-color: #bd6903;
+  background-color: #adb1eb;
   line-height: 3em;
 }
 .sm-page2 {
   grid-area: page2;
-  background-color: #f99e43;
+  background-color: #0f8990;
   line-height: 3em;
 }
 .sm-page3 {
   grid-area: page3;
-  background-color: #cc863a;
+  background-color: #64ecf9;
   line-height: 3em;
 }
 .top {
