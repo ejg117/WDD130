@@ -7,13 +7,13 @@
 /* Fixing nav hover state */
 nav a {
     text-align: center;
-    color: #00e5ff;
+    color: #0077ff;
     text-decoration: none;
 }
 
 nav a:hover {
     background-color: rgb(0, 0, 0);
-    color: #00e5ff;
+    color: #4fc3f4;
 }
 
 #background {

@@ -1,0 +1,33 @@
+body {
+    background: lightgrey
+}
+
+.qbox1, .qbox2, .qbox3 {
+    box-sizing: border-box;
+}
+
+.qbox1 {
+    margin: 20px;
+    border: 15px solid black;
+    padding: 10px 5px;
+    width: 500px;
+    background: white;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.qbox2 {
+    margin: 20px;
+    border: 25px dotted royalblue;
+    padding: 10px 15px;
+    width: 500px;
+    background: lightpink;
+    border-radius: 35px;
+}
+.qbox3 {
+    margin: 20px;
+    border: 35px solid darkred;
+    padding: 30px;
+    width: 500px;
+    background: tan;
+    border-radius: 90px;
+}
