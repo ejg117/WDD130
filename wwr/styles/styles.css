@@ -1,14 +1,26 @@
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
-    background: rgb(6, 172, 238);
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Rock+Salt&display=swap');
+
+body {
+    background-color: #1c77e7;
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
-/* Fixing nav hover state */
+header {
+    background-color: rgb(128, 208, 248);
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
 nav a {
     text-align: center;
     color: #0077ff;
     text-decoration: none;
+    padding: 10px;
 }
 
 nav a:hover {
@@ -16,12 +28,16 @@ nav a:hover {
     color: #4fc3f4;
 }
 
-#background {
-    height: 725px;
-}
-
 #hero-msg h1, #hero-msg h4 {
     text-align: center;
+}
+
+#hero-img {
+    width: 100%; 
+}
+
+#background {
+    height: 725px;
 }
 
 .button-box {
@@ -32,26 +48,48 @@ main section {
     text-align: center;
 }
 
-/* Background colors */
-body {
-    background-color: rgb(128, 208, 248);
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
 }
 
-header {
-    background-color: rgb(128, 208, 248);
+
+.home-title {
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 .book, .join {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
     background-color: rgb(128, 208, 248);
     text-decoration: none;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover {
-    background-color: rgba(0, 128, 128, 0.7); /* More distinct hover effect */
+    background-color: rgba(0, 128, 128, 0.7);
 }
 
-footer {
-    background-color: rgb(128, 208, 248);
+.card-img {
+    border: 10px solid #044271;
+}
+
+.icon {
+    padding-top: 10px;
+    width: 80px; 
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.msg {
+    padding: 35px;
+    background-color: #3600ca;
+    line-height: 1.5em; 
 }
 
 .msg h2 {
@@ -60,6 +98,18 @@ footer {
 
 .msg p {
     color: #00e5ff;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: rgb(128, 208, 248);
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer p {
+    font-size: 1.2em;
 }
 
 footer a {
@@ -71,15 +121,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
-footer p {
-    font-size: 1.2em;
+footer .social img {
+    padding-top: 15px;
 }
 
-/* Icon and hero image widths */
-.icon {
-    width: 80px;
-}
-
-#hero-img {
-    width: 100%; /* Full width for the hero image */
+h2 {
+    margin: 0;
 }

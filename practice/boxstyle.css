@@ -31,3 +31,14 @@ body {
     background: tan;
     border-radius: 90px;
 }
+nav a {
+    font-size: 1em;
+    display: block;
+
+}
+nav li img {
+    border: 10px solid red;
+    border-radius: 160px;
+    width: 70px;
+    height: 70px;
+}
