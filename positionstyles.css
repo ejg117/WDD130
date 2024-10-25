@@ -1,16 +1,15 @@
 /* CSS - Name: "positionstyles.css" */
 /* Activity 1 styles */
-/* Activity 1 styles */
 .content1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;  /* Two equal columns */
-  justify-items: center;  /* Center green and yellow horizontally */
-  gap: 20px;  /* 20px gap between rows and columns */
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;  
+  gap: 20px;  
 }
 
 .red1, .blue1 {
-  grid-column: 1/3;  /* Red and Blue span across 2 columns */
-  width: 100%;  /* Full width for red and blue */
+  grid-column: 1/3;  
+  width: 100%;  
 }
 
 .red1 {
@@ -19,8 +18,8 @@
 }
 
 .green1, .yellow1 {
-  width: 200px;  /* Adjust width to 200px */
-  height: 200px;  /* Adjust height to 200px */
+  width: 200px; 
+  height: 200px;  
 }
 
 .green1 {
@@ -147,7 +146,7 @@
 }
 
 .yellow5 {
-  position: relative; /* Make yellow a positioning context */
+  position: relative; 
   width: calc(100% - 10px);
   margin-bottom: 10px;
   background-color: gold;
@@ -156,9 +155,9 @@
 }
 
 .green5 {
-  position: absolute; /* Position inside yellow5 */
-  top: 0; /* Aligns to top of yellow */
-  left: 0; /* Aligns to left of yellow */
+  position: relative; 
+  top: 0; 
+  left: 0; 
   width: 200px;
   height: 200px;
   background-color: green;
@@ -168,14 +167,14 @@
   width: 100%;
   height: 65px;
   background-color: blue;
-  margin-top: 5px; /* Creates a gap between red and blue */
+  margin-top: 5px;
 }
 /* Activity 6 styles */ 
 .content6 { 
-  position: relative; /* The parent element */
-  width: 300px; /* Adjust the width and height to fit the content */
+  position: relative; 
+  width: 300px; 
   height: 300px;
-  border: 1px solid black; /* Optional, just to see the container */
+  border: 1px solid black; 
 }
 
 .red6 {
@@ -194,7 +193,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  z-index: 2; /* Higher than blue */
+  z-index: 2; 
 }
 
 .blue6 {
@@ -204,7 +203,7 @@
   position: absolute;
   top: 50px;
   left: 50px;
-  z-index: 1; /* Lower than green and yellow */
+  z-index: 1; 
 }
 
 .yellow6 {
@@ -214,7 +213,7 @@
   position: absolute;
   top: 100px;
   right: 0;
-  z-index: 2; /* Higher than blue */
+  z-index: 2; 
 }
 
 
