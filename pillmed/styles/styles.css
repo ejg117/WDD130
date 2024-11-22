@@ -1,0 +1,149 @@
+body {
+    font-family: 'Raleway', Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.hero {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.hero img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image horizontally */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+article img {
+    max-width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+article div {
+    flex-grow: 1;
+}
+
+.grid-layout {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.grid-section {
+    grid-column: 1 / 13;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-item {
+    grid-column: span 6;
+}
+
+.img-item img {
+    width: 100%;
+    height: auto;
+}
+
+.text-item {
+    grid-column: span 6;
+}
+
+.full-width {
+    grid-column: span 12;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.full-width p {
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #4fc3f4;
+    text-decoration: none;
+}
