@@ -25,8 +25,8 @@
                 <img src="drugs.jpg" alt="About Me Image">
                 <div>
                     <h2>About Drugs</h2>
-                    <p>Drugs have been a part of human culture for centuries, used for medicinal, recreational, and spiritual purposes. They can be classified into various categories based on their effects on the body and mind, such as stimulants, depressants, hallucinogens, and opioids. **Medicinal drugs** are used to treat or prevent diseases and conditions, from antibiotics and antivirals to vaccines and chemotherapy agents. **Recreational drugs** like alcohol, cannabis, and nicotine are consumed for their psychoactive effects and often for social or personal enjoyment.</p>
-                    <p>In addition to these categories, **psychoactive drugs** affect the central nervous system and can alter mood, perception, and behavior. **Hallucinogens**, such as LSD and psilocybin, can induce altered sensory perceptions and profound experiences, sometimes used in cultural or religious rituals. **Opioids**, including prescription painkillers and illegal drugs like heroin, are highly effective for pain relief but carry a high risk of addiction and overdose. **Stimulants** like caffeine, cocaine, and methamphetamine increase alertness and energy but can also lead to dependence and severe health problems. **Depressants**, including benzodiazepines and barbiturates, are used to calm the brain and are often prescribed for anxiety and sleep disorders.</p>
+                    <p>Drugs have been a part of human culture for centuries, used for medicinal, recreational, and spiritual purposes. They can be classified into various categories based on their effects on the body and mind, such as stimulants, depressants, hallucinogens, and opioids. <strong>Medicinal drugs</strong> are used to treat or prevent diseases and conditions, from antibiotics and antivirals to vaccines and chemotherapy agents. <strong>Recreational drugs</strong> like alcohol, cannabis, and nicotine are consumed for their psychoactive effects and often for social or personal enjoyment.</p>
+                    <p>In addition to these categories, <strong>psychoactive drugs</strong> affect the central nervous system and can alter mood, perception, and behavior. <strong>Hallucinogens</strong>, such as LSD and psilocybin, can induce altered sensory perceptions and profound experiences, sometimes used in cultural or religious rituals. <strong>Opioids</strong>, including prescription painkillers and illegal drugs like heroin, are highly effective for pain relief but carry a high risk of addiction and overdose. <strong>Stimulants</strong> like caffeine, cocaine, and methamphetamine increase alertness and energy but can also lead to dependence and severe health problems. <strong>Depressants</strong>, including benzodiazepines and barbiturates, are used to calm the brain and are often prescribed for anxiety and sleep disorders.</p>
                     <p>Understanding the different types of drugs and their purposes can help individuals make informed choices and use them safely and effectively. The history and cultural context of drug use also provide valuable insights into why certain substances are valued or vilified in different societies.</p>
                 </div>
             </article>
@@ -34,10 +34,10 @@
                 <img src="drugs2.jpg" alt="Projects Image">
                 <div>
                     <h2>What to Know</h2>
-                    <p>Understanding the basics about drugs is essential for making informed decisions about their use. This includes knowing the potential benefits and risks associated with different types of drugs, as well as being aware of the legal and health implications of drug use. **Proper Dosage and Administration**: One of the most critical aspects of drug use is following the prescribed dosage and administration guidelines. This ensures the drug is effective and reduces the risk of adverse effects.</p>
-                    <p>**Potential Side Effects**: All drugs have the potential to cause side effects, which can range from mild to severe. Being aware of these side effects and knowing how to manage them is crucial for safe drug use. **Interactions with Other Substances**: Drugs can interact with other medications, foods, or beverages, potentially altering their effects. It is important to discuss all medications and supplements with a healthcare provider to avoid harmful interactions.</p>
-                    <p>**Legal Considerations**: The legal status of drugs varies by region and can have significant implications. Some substances are controlled or illegal, and possession or use can result in legal penalties. Understanding the laws related to drug use is essential for staying within legal boundaries. **Health Implications**: Chronic use of certain drugs can lead to health issues, including addiction, organ damage, and mental health disorders. It is vital to use drugs responsibly and seek help if there are signs of misuse or dependency.</p>
-                    <p>**Emergency Measures**: Knowing how to respond in case of an overdose or adverse reaction can save lives. This includes recognizing the symptoms of an overdose, administering first aid, and seeking emergency medical attention. Education and awareness are key to ensuring that drugs are used safely and responsibly. Understanding these fundamental aspects of drug use can help individuals make better choices and promote overall health and well-being.</p>
+                    <p>Understanding the basics about drugs is essential for making informed decisions about their use. This includes knowing the potential benefits and risks associated with different types of drugs, as well as being aware of the legal and health implications of drug use. <strong>Proper Dosage and Administration</strong>: One of the most critical aspects of drug use is following the prescribed dosage and administration guidelines. This ensures the drug is effective and reduces the risk of adverse effects.</p>
+                    <p><strong>Potential Side Effects</strong>: All drugs have the potential to cause side effects, which can range from mild to severe. Being aware of these side effects and knowing how to manage them is crucial for safe drug use. <strong>Interactions with Other Substances</strong>: Drugs can interact with other medications, foods, or beverages, potentially altering their effects. It is important to discuss all medications and supplements with a healthcare provider to avoid harmful interactions.</p>
+                    <p><strong>Legal Considerations</strong>: The legal status of drugs varies by region and can have significant implications. Some substances are controlled or illegal, and possession or use can result in legal penalties. Understanding the laws related to drug use is essential for staying within legal boundaries. <strong>Health Implications</strong>: Chronic use of certain drugs can lead to health issues, including addiction, organ damage, and mental health disorders. It is vital to use drugs responsibly and seek help if there are signs of misuse or dependency.</p>
+                    <p><strong>Emergency Measures</strong>: Knowing how to respond in case of an overdose or adverse reaction can save lives. This includes recognizing the symptoms of an overdose, administering first aid, and seeking emergency medical attention. Education and awareness are key to ensuring that drugs are used safely and responsibly. Understanding these fundamental aspects of drug use can help individuals make better choices and promote overall health and well-being.</p>
                 </div>
             </article>
         </section>
@@ -46,5 +46,29 @@
         <p>&copy; 2024 My Personal Site. All rights reserved.</p>
         <p><a href="site-plan.html">Site Plan</a></p>
     </footer>
+    <!-- Add the script here -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add fade-in animation to the hero section
+            const heroSection = document.querySelector('.hero');
+            heroSection.style.opacity = 0;
+            heroSection.style.transition = 'opacity 2s';
+            setTimeout(() => {
+                heroSection.style.opacity = 1;
+            }, 100);
+
+            // Add slide-in animation to the articles
+            const articles = document.querySelectorAll('article');
+            articles.forEach((article, index) => {
+                article.style.opacity = 0;
+                article.style.transform = 'translateX(-20px)';
+                article.style.transition = 'opacity 1s, transform 1s';
+                setTimeout(() => {
+                    article.style.opacity = 1;
+                    article.style.transform = 'translateX(0)';
+                }, (index + 1) * 300);
+            });
+        });
+    </script>
 </body>
 </html>
