@@ -10,8 +10,8 @@
     <header>
         <nav>
             <a href="index.html">Home</a>
-            <a href="page2.html">Page 2</a>
-            <a href="page3.html">Page 3</a>
+            <a href="subpage1.html">Page 2</a>
+            <a href="subpage2.html">Page 3</a>
         </nav>
     </header>
     <main>
@@ -46,10 +46,8 @@
         <p>&copy; 2024 My Personal Site. All rights reserved.</p>
         <p><a href="site-plan.html">Site Plan</a></p>
     </footer>
-    <!-- Add the script here -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Add fade-in animation to the hero section
             const heroSection = document.querySelector('.hero');
             heroSection.style.opacity = 0;
             heroSection.style.transition = 'opacity 2s';
@@ -57,7 +55,6 @@
                 heroSection.style.opacity = 1;
             }, 100);
 
-            // Add slide-in animation to the articles
             const articles = document.querySelectorAll('article');
             articles.forEach((article, index) => {
                 article.style.opacity = 0;
