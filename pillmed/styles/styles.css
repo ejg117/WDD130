@@ -36,7 +36,6 @@ nav a {
 }
 
 nav a:hover {
-    background-color: linear-gradient(45deg, white, black); /* Gradient background */
     text-decoration: none; /* Remove underline on hover */
     transform: translateY(-2px); /* Slight upward movement on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -124,7 +123,7 @@ article {
 
 article img {
     max-width: 150px;
-    height: auto;
+    height: 150px;
     margin-right: 20px;
 }
 
