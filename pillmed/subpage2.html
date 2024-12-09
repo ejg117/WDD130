@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 3</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        .dropdown-header {
+            cursor: pointer;
+            background-color: #000000;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            text-align: left;
+            width: 100%;
+            font-size: 1.2em;
+        }
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: #f1f1f1;
+            padding: 0 10px;
+        }
+        .dropdown-content p {
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -22,15 +45,31 @@
         <article class="image-text">
             <img src="usage_i.webp" alt="Usage Image">
             <div>
-                <h2>Usage</h2>
-                <p>Proper usage of drugs is critical to maximize their benefits and minimize potential risks. This involves following the prescribed dosage, understanding the method of administration, and adhering to the timing and frequency of doses. Always consult your healthcare provider if you have any questions or concerns about your medication.</p>
+                <button class="dropdown-header" onclick="toggleDropdown(this)">Usage</button>
+                <div class="dropdown-content">
+                    <p>Proper usage of drugs is critical to maximize their benefits and minimize potential risks. This involves following the prescribed dosage, understanding the method of administration, and adhering to the timing and frequency of doses. Always consult your healthcare provider if you have any questions or concerns about your medication.</p>
+                </div>
+            </div>
+            <div>
+                <button class="dropdown-header" onclick="toggleDropdown(this)">Special Considerations With Usage</button>
+                <div class="dropdown-content">
+                    <p>For certain drugs, individual factors such as age, weight, or pre-existing conditions may require special dosing adjustments. Additionally, some medications might need to be taken with food, while others should be taken on an empty stomach. Always follow your doctor's specific instructions to ensure optimal results.</p>
+                </div>
             </div>
         </article>
         <article class="image-text">
             <img src="drug_info.jpg" alt="Drug Info Image">
             <div>
-                <h2>Guideline Details</h2>
-                <p>Understanding drug guidelines helps ensure that medications are used safely and effectively. This includes knowing the indications (why the drug is prescribed), contraindications (when the drug should not be used), and potential interactions with other medications or foods. Staying informed about these details can prevent adverse effects and improve treatment outcomes.</p>
+                <button class="dropdown-header" onclick="toggleDropdown(this)">Guideline Details</button>
+                <div class="dropdown-content">
+                    <p>Understanding drug guidelines helps ensure that medications are used safely and effectively. This includes knowing the indications (why the drug is prescribed), contraindications (when the drug should not be used), and potential interactions with other medications or foods. Staying informed about these details can prevent adverse effects and improve treatment outcomes.</p>
+                </div>
+            </div>
+            <div>
+                <button class="dropdown-header" onclick="toggleDropdown(this)">Monitoring and Follow-Ups</button>
+                <div class="dropdown-content">
+                    <p>Some medications require regular monitoring, such as blood tests or vital sign checks, to ensure they are working as intended and to detect any side effects early. Establish a follow-up schedule with your healthcare provider to track your progress and make any necessary adjustments to your treatment plan.</p>
+                </div>
             </div>
         </article>
         <section class="full-width">
@@ -44,5 +83,16 @@
         <p>&copy; 2024 My Personal Site. All rights reserved.</p>
         <p><a href="site-plan.html">Site Plan</a></p>
     </footer>
+
+    <script>
+        function toggleDropdown(button) {
+            const content = button.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        }
+    </script>
 </body>
 </html>
